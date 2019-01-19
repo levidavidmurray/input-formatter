@@ -5,11 +5,11 @@ const userInput = document.querySelector('#userInput');
 const defaultFormat = '({0}{1}{2}) {3}{4}{5}-{6}{7}{8}{9}';
 
 userInput.addEventListener('keydown', (e) => {
-  if (e.key === 'Backspace') {
+  if (e.key === 'Backspace')
     deleteMode = true;
-  } else {
+  else
     deleteMode = false;
-  }
+    
 });
 
 userInput.addEventListener('input', (e) => {
