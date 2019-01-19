@@ -1,5 +1,7 @@
 # Phone Input Formatter
 
+Try it out! https://levidavidmurray.github.io/phone-input-formatter/
+
 <img src="https://github.com/levidavidmurray/phone-input-formatter/raw/master/gif/on.gif" alt="" width="480">
 
 #### Overlycomplicated, and overexplained logic to format phone number input field values from `xxxxxxxxxx` to `(xxx) xxx-xxxx` as you type.
