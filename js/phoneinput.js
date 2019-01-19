@@ -1,10 +1,10 @@
 let phoneStr = '';
 let formattedStr = '';
 let deleteMode = false;
-const userInput = document.querySelector('#userInput');
+const phoneInput = document.querySelector('#phoneInput');
 const defaultFormat = '({0}{1}{2}) {3}{4}{5}-{6}{7}{8}{9}';
 
-userInput.addEventListener('keydown', (e) => {
+phoneInput.addEventListener('keydown', (e) => {
   if (e.key === 'Backspace')
     deleteMode = true;
   else
@@ -12,17 +12,17 @@ userInput.addEventListener('keydown', (e) => {
     
 });
 
-userInput.addEventListener('input', (e) => {
+phoneInput.addEventListener('input', (e) => {
   if (deleteMode) {
-    userInput.value = userInput.value;
-    phoneStr = parsePhoneString(userInput.value);
+    phoneInput.value = phoneInput.value;
+    phoneStr = parsePhoneString(phoneInput.value);
   } else {
     if (e.inputType == 'insertText' && !isNaN(parseInt(e.data))) {
       if (phoneStr.length <= 10)
         phoneStr += e.data;
     }
 
-    userInput.value = formatPhoneString();
+    phoneInput.value = formatPhoneString();
   }
 });
 
