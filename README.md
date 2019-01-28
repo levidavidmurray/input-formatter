@@ -1,5 +1,5 @@
 # Phone Input Formatter
-#### Formats the input text to your desired format as you type.
+Input that only allows numbers, and formats the input text to your desired format as you type.
 
 Try it out! https://levidavidmurray.github.io/phone-input-formatter/
 
