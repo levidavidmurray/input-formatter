@@ -1,8 +1,8 @@
-const phoneInputText = document.querySelector('#phoneInputText');
+const phoneInput = document.querySelector('#phoneInput');
 const phoneFormat = '({0}{1}{2}) {3}{4}{5}-{6}{7}{8}{9}';
 
-phoneInputText.addEventListener('input', (event) => {
-  const inputStripped = phoneInputText.value.replace(/\D/g, '');
+phoneInput.addEventListener('input', (event) => {
+  const inputStripped = phoneInput.value.replace(/\D/g, '');
   const inputIsValid = !isNaN(parseInt(event.data));
 
   if (event.inputType.includes('deleteContent')) {
@@ -21,12 +21,12 @@ phoneInputText.addEventListener('input', (event) => {
     value was not a number), then remove the last inputted value.
   */
   if (event.inputType == 'insertText' && (inputStripped.length > 10 || !inputIsValid)) {
-    phoneInputText.value = phoneInputText.value.substring(0, phoneInputText.value.length - 1);
+    phoneInput.value = phoneInput.value.substring(0, phoneInput.value.length - 1);
     return;
   }
 
   if (inputStripped)
-    phoneInputText.value = formatPhoneInput(inputStripped);
+    phoneInput.value = formatPhoneInput(inputStripped);
 });
 
 const formatPhoneInput = (inputNumber) => {
