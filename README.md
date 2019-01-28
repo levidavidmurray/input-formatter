@@ -3,5 +3,5 @@
 
 Try it out! https://levidavidmurray.github.io/phone-input-formatter/
 
-<img src="https://github.com/levidavidmurray/phone-input-formatter/raw/master/gif/on.gif" alt="" width="480">
+<img src="https://github.com/levidavidmurray/phone-input-formatter/raw/master/static/showcase.gif" alt="" width="480">
 
