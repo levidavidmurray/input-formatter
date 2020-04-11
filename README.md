@@ -1,14 +1,26 @@
-# Phone Input Formatter
+# Input Formatter
 Input that only allows numbers, and formats the input text to your desired format as you type.
 
-Try it out! https://levidavidmurray.github.io/phone-input-formatter/
+### Usage
+```shell script
+yarn add @levidavidmurray/input-formatter
+```
 
-<img src="https://github.com/levidavidmurray/phone-input-formatter/raw/master/static/showcase.gif" alt="" width="480">
+```typescript
+import {InputFormatter} from '@levidavidmurray/input-formatter';
 
-## Usage
-1. Copy `src/phone-format.js` file
-2. Add `<input id="phoneInput'>` to your HTML
+const formatter = InputFormatter({
+  formats: {
+    3: '(xxx',
+    6: '(xxx) xxx',
+    10: '(xxx) xxx-xxxx',
+    11: '+x (xxx) xxx-xxxx'
+  },
+  replaceChar: 'x',
+  skipFormatOpts: [{length: 10, position: 1, skip: false}],
+});
+
+formatter.on('#input');
+```
 
 #
-
-*Javascript functionality only. (Copy static/styles.css and `.group` div in index.html for styling)*
