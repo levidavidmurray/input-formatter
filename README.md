@@ -1,7 +1,7 @@
 # Input Formatter
 Input that only allows numbers, and formats the input text to your desired format as you type.
 
-[Try it out!](https://levidavidmurray.github.io/phone-input-formatter/docs)
+[Try it out!](https://levidavidmurray.github.io/input-formatter/docs)
 
 <img src="https://github.com/levidavidmurray/phone-input-formatter/raw/master/public/showcase.gif" alt="" width="480">
 
