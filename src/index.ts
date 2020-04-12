@@ -146,7 +146,8 @@ export function InputFormatter(initOpts: InputFormatterOpts) {
 
   function on(selector: string, newOpts?: InputFormatterOpts): InputFormatter {
     initOpts = Object.assign({}, initOpts, newOpts);
-    const {formats, replaceChar, skipFormatOpts} = initOpts;
+    const {formats, skipFormatOpts} = initOpts;
+    const replaceChar = initOpts.replaceChar || 'x';
 
     const inputEl = document.querySelector(selector) as HTMLInputElement;
 

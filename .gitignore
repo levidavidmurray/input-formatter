@@ -1,7 +1,11 @@
+src/example.ts
+webpack.config.js
+package.json.bak
 example
-dist
+lib
 .idea
 .sass-cache/
 *.css.map
 *.scss
 node_modules
+*.swp
