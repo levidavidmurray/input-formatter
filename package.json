@@ -1,6 +1,6 @@
 {
   "name": "@levidavidmurray/input-formatter",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "Levi Murray <levidavidmurray@gmail.com>",
   "license": "MIT",
   "main": "lib/index.js",
