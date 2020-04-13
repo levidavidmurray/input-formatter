@@ -1,4 +1,9 @@
 # Input Formatter
+
+<a href="https://www.npmjs.com/package/@levidavidmurray/input-formatter" alt="npm Repository Link">
+  <img src="https://img.shields.io/npm/v/@levidavidmurray/input-formatter?logo=npm" />
+</a>
+
 Input that only allows numbers, and formats the input text to your desired format as you type.
 
 [Try it out!](https://levidavidmurray.github.io/input-formatter)
